@@ -1,14 +1,16 @@
-package com.NilBro.MyProject.RestController;
+package com.NilBro.MyProject.Controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping(value= "/")
+
 @RestController
+
 public class Home {
 
-    @GetMapping(value = "/")
+    @RequestMapping("/")
     public String home(){
         return "You are in Home Now";
     }
